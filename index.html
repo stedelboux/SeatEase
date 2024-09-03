@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Assentos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seleção de Assentos</h1>
+        <p>Escolha seus assentos e reserve agora!</p>
+    </header>
+
+    <div class="cinema-container">
+        <div class="screen">Tela do Cinema</div>
+        <div class="seat-map"></div>
+
+        <div class="seat-legend">
+            <div class="legend-item">
+                <div class="available"></div>
+                <span>Disponível</span>
+            </div>
+            <div class="legend-item">
+                <div class="selected"></div>
+                <span>Selecionado</span>
+            </div>
+            <div class="legend-item">
+                <div class="reserved"></div>
+                <span>Reservado</span>
+            </div>
+        </div>
+
+        <button id="reserve-btn" class="hidden">Reservar Assentos</button>
+
+        <div id="invoice" class="hidden">
+            <h2>Nota Fiscal</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assento</th>
+                        <th>Fileira</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-body">
+                    <!-- Conteúdo gerado pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

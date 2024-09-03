@@ -1,0 +1,170 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos do header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2a1d47;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Container do cinema */
+.cinema-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: fill; /* Limita a largura máxima */
+    padding: 80px;
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* Tela do cinema */
+.screen {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Mapa de assentos */
+.seat-map {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos assentos */
+.seat {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Verde para disponível */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.seat.selected {
+    background-color: #ffeb3b; /* Amarelo para selecionado */
+    transform: scale(1.1);
+}
+
+.seat.reserved {
+    background-color: #f44336; /* Vermelho para reservado */
+    cursor: not-allowed;
+}
+
+/* Estilos da legenda */
+.seat-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-item div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.legend-item .available {
+    background-color: #4CAF50; /* Verde para disponível */
+}
+
+.legend-item .selected {
+    background-color: #ffeb3b; /* Amarelo para selecionado */
+}
+
+.legend-item .reserved {
+    background-color: #f44336; /* Vermelho para reservado */
+}
+
+/* Estilos do botão de reserva */
+button.hidden {
+    display: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos da nota fiscal */
+#invoice {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#invoice table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#invoice th, #invoice td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#invoice th {
+    background-color: #f2f2f2;
+}
