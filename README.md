@@ -34,6 +34,10 @@ Estou atualmente aprendendo e aprimorando minhas habilidades em desenvolvimento 
 
 Sinta-se à vontade para contribuir com melhorias e correções. Basta abrir uma issue ou enviar um pull request. Estou sempre aberto a feedback e sugestões para aprimorar este projeto.
 
+## Desafio
+
+Para quem estiver interessado em explorar o desafio que inspirou este projeto, você pode acessá-lo [neste link](https://www.coursera.org/learn/showcase-create-a-responsive-seat-selector-ui-in-html-css-js/home/week/1).
+
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
@@ -42,4 +46,3 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 - Agradeço a todos que contribuíram e forneceram feedback.
 - Obrigado aos recursos e tutoriais que ajudaram no desenvolvimento deste projeto.
-
