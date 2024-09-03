@@ -36,7 +36,7 @@ Sinta-se à vontade para contribuir com melhorias e correções. Basta abrir uma
 
 ## Desafio
 
-Para quem estiver interessado em explorar o desafio que inspirou este projeto, você pode acessá-lo [neste link](https://www.coursera.org/learn/showcase-create-a-responsive-seat-selector-ui-in-html-css-js/home/week/1).
+Para quem estiver interessado em explorar o desafio que inspirou este projeto, você pode acessá-lo [aqui](https://www.coursera.org/projects/showcase-create-a-responsive-seat-selector-ui-in-html-css-js).
 
 ## Licença
 
